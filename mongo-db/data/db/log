@@ -1,0 +1,53 @@
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] MongoDB starting : pid=9807 port=27017 dbpath=/home/ashish/Desktop/desktop2/angular-node/mongo-db/data/db 64-bit host=sujeet
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] db version v3.2.12
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] git version: ef3e1bc78e997f0d9f22f45aeb1d8e3b6ac14a14
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] modules: none
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] build environment:
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-10-19T18:40:12.675+0530 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "data/db" }, systemLog: { destination: "file", path: "data/db/log" } }
+2018-10-19T18:40:12.695+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] 
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] 
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-10-19T18:40:13.335+0530 I CONTROL  [initandlisten] 
+2018-10-19T18:40:13.336+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2018-10-19T18:40:13.336+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/ashish/Desktop/desktop2/angular-node/mongo-db/data/db/diagnostic.data'
+2018-10-19T18:40:13.615+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-10-19T18:57:53.019+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33697 #1 (1 connection now open)
+2018-10-19T18:58:33.387+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33699 #2 (2 connections now open)
+2018-10-19T18:58:33.585+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33702 #3 (3 connections now open)
+2018-10-19T18:58:33.606+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33704 #4 (4 connections now open)
+2018-10-19T18:59:14.282+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33717 #5 (5 connections now open)
+2018-10-19T18:59:14.288+0530 I COMMAND  [conn4] command local.startup_log command: aggregate { aggregate: "startup_log", pipeline: [ { $indexStats: {} }, { $project: { name: 1, usageHost: "$host", usageCount: "$accesses.ops", usageSince: "$accesses.since" } } ], cursor: {} } keyUpdates:0 writeConflicts:0 numYields:0 reslen:214 locks:{ Global: { acquireCount: { r: 6 } }, Database: { acquireCount: { r: 3 } }, Collection: { acquireCount: { r: 3 } } } protocol:op_query 105ms
+2018-10-19T18:59:14.325+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33719 #6 (6 connections now open)
+2018-10-19T19:05:26.711+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33761 #7 (7 connections now open)
+2018-10-19T19:05:26.784+0530 I COMMAND  [conn7] CMD: drop mongo-exercises.courses
+2018-10-19T19:05:26.785+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:33762 #8 (8 connections now open)
+2018-10-19T19:05:27.178+0530 I COMMAND  [conn8] command mongo-exercises.courses command: insert { insert: "courses", documents: 7, writeConcern: { getLastError: 1, w: 1 }, ordered: false } ninserted:7 keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } } } protocol:op_query 381ms
+2018-10-19T19:05:27.235+0530 I NETWORK  [conn7] end connection 127.0.0.1:33761 (7 connections now open)
+2018-10-19T19:05:27.235+0530 I NETWORK  [conn8] end connection 127.0.0.1:33762 (7 connections now open)
+2018-10-19T19:06:26.491+0530 I NETWORK  [conn4] end connection 127.0.0.1:33704 (5 connections now open)
+2018-10-19T19:06:26.491+0530 I NETWORK  [conn5] end connection 127.0.0.1:33717 (5 connections now open)
+2018-10-19T19:06:26.491+0530 I NETWORK  [conn2] end connection 127.0.0.1:33699 (5 connections now open)
+2018-10-19T19:06:26.492+0530 I NETWORK  [conn6] end connection 127.0.0.1:33719 (3 connections now open)
+2018-10-19T19:06:26.492+0530 I NETWORK  [conn3] end connection 127.0.0.1:33702 (1 connection now open)
+2018-10-19T19:06:50.262+0530 I NETWORK  [conn1] end connection 127.0.0.1:33697 (0 connections now open)
+2018-10-19T19:07:30.283+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-10-19T19:07:30.283+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-10-19T19:07:30.508+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-10-19T19:07:30.509+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-10-19T19:07:30.509+0530 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2018-10-19T19:07:30.509+0530 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-10-19T19:07:30.509+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-10-19T19:07:30.569+0530 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-10-19T19:07:30.569+0530 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2018-10-19T19:07:30.569+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-10-19T19:07:31.284+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-10-19T19:07:31.284+0530 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
